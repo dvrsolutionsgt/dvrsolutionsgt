@@ -1,17 +1,142 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Welcome to Our Company - Providing [Your Company's Services]">
+    <title>dvrsolutions</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1><center>dvrsolutionsgt</center></h1>
-    <h3>Universidad Galileo</h3>
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Catalogo</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Company Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca De</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="py-5 text-center">
+        <div class="container">
+            <h1>Bienvenidos a dvrsolutions</h1>
+            <p class="lead">Universidad Galileo</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Iniciar</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Sobre nosotros</h2>
+            <p>Somos una empresa 100% guatemalteca.</p>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Nuestros servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Servicios</h3>
+                    <p>descripcion</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Seguridad</h3>
+                    <p>Seguridad</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Monitorep</h3>
+                    <p>Monitoreo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Portafolio</h2>
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61yKyzSrVBL.jpg" alt="Project 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Camaras de seguridad</h4>
+                            <p class="card-text">Instalacion y venta de camaras</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://doto.vtexassets.com/arquivos/ids/204985/pc-gamer-grizzly-24-kit-gamer-5600g-1tb-dotomexico-vista-frontal-2.jpg" alt="Project 2">
+                        <div class="card-body">
+                            <h4 class="card-title">Computadoras</h4>
+                            <p class="card-text">Venta de computadoras</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://cdn.euroinnova.edu.es/img/subidasEditor/funciones%20-%202021-04-28t123034-1619605935.080" alt="Project 3">
+                        <div class="card-body">
+                            <h4 class="card-title">Asesoria</h4>
+                            <p class="card-text">Asesoria en proyectos tecnologicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <p class="text-center">Cualquier duda o sugerencia, puedes hablar con nosotros.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2023 dvrsolutions. Derechos reservados</p>
+    </footer>
+
+    <!-- Include Bootstrap JS and Popper.js (required for Bootstrap dropdowns) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
