@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenidos a dvrsolutions, tú mejor opción en seguridad.">
-    <title>dvrsolutions</title>
+    <meta name="description" content="Bienvenidos a DvR Solutions, Vigilancia Clara, Tecnología Completa.">
+    <link rel="icon" type="image/x-icon" href="/img/logo/favicon.png">
+    <title>DvR Solutions</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">
-                <img src="https://www.galileo.edu/wp-content/uploads/2023/01/Galileo-Sin-slogan.png" alt="dvrsolutions" height="30">
+                <img src="/img/logo/logo-no-background.png" alt="dvrsolutions" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +25,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Inicio</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">Acerca De</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Preguntas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
@@ -37,48 +47,124 @@
         </nav>
     </header>
 
-    <section id="hero" class="py-5 text-center">
+    <section id="about" class="py-5 text-center">
         <div class="container">
-            <h1>Bienvenidos a dvrsolutions</h1>
-            <p class="lead">Universidad Galileo</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Iniciar</a>
+            <br><br>
+            <img src="/img/logo/logo-color-small.png" alt="imagen presentacion">
+
+            <p class="lead"><br>Somos una empresa que ofrece productos y servicios en el ámbito de la tecnología y la
+                seguridad. Nuestra combinación de computadoras de calidad y sistemas de seguridad avanzados nos
+                posiciona como una solución integral para las necesidades tecnológicas y de protección de nuestros
+                clientes. Con un enfoque en la excelencia del servicio al cliente y soluciones personalizadas, estamos
+                comprometidos a brindar tranquilidad y confianza a través de la tecnología.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Escribenos</a>
         </div>
     </section>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Sobre nosotros</h2>
-            <p>Somos una empresa 100% guatemalteca.</p>
-        </div>
-    </section>
 
-    <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Nuestros servicios</h2>
+
+
+    <section id="services" class="py-5 bg-light mx-5">
+        <div class="container-fluid px-3">
+            <h2 class="text-center pb-3">Nuestros servicios</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <h3>Servicios</h3>
-                    <p>descripcion</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="/img/computadoras.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Computadoras y Tecnología</h5>
+                            <p class="card-text">Venta de computadoras de escritorio, portátiles y equipos 2 en 1 de
+                                marcas reconocidas.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/camaras.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Seguridad</h5>
+                            <p class="card-text">Ofrecemos una variedad de cámaras de vigilancia, incluyendo cámaras IP,
+                                cámaras de seguridad para exteriores e interiores, y cámaras de alta resolución.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/monitoreo.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoreo</h5>
+                            <p class="card-text">Ofrecemos soluciones de monitoreo en tiempo real a través de
+                                dispositivos móviles y computadoras, lo que permite a los clientes mantenerse informados
+                                sobre la seguridad de sus propiedades en todo momento.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/consultoria.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria</h5>
+                            <p class="card-text">Nuestro equipo de expertos en tecnología y seguridad ofrece
+                                asesoramiento personalizado para ayudar a los clientes a elegir las soluciones más
+                                adecuadas para sus necesidades.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Seguridad</h3>
-                    <p>Seguridad</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Monitorep</h3>
-                    <p>Monitoreo</p>
+            </div>
+    </section>
+
+    <section id="blog" class="py-5 bg-light mx-5">
+        <div class="container">
+            <h2 class="text-center pb-3">Noticias</h2>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-header">
+                            Videovigilancia 
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wendi Corina Herrera &nbsp; &nbsp; &nbsp;</h5>
+                            <p class="card-text">22010731</p>
+                            <a href="https://importanciadevideovigilancia.blogspot.com/" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Título Blog 
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Diego Ernesto López Ruiz</h5>
+                            <p class="card-text">22005448</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Técnico en Línea
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Erick Fernando Guerra Colocho</h5>
+                            <p class="card-text">22002284</p>
+                            <a href="https://tecnicoenlineagt.blogspot.com/" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Título Blog 
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gabriel Gustavo Gutiérrez Gutiérrez</h5>
+                            <p class="card-text">22005877</p>
+                            <a href="https://importanciadevideovigilancia.blogspot.com/" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="py-5">
+    <!-- <section id="portfolio" class="py-5">
         <div class="container">
             <h2 class="text-center">Portafolio</h2>
             <div class="row">
                 <div class="col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61yKyzSrVBL.jpg" alt="Project 1">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61yKyzSrVBL.jpg"
+                            alt="Project 1">
                         <div class="card-body">
                             <h4 class="card-title">Camaras de seguridad</h4>
                             <p class="card-text">Instalacion y venta de camaras</p>
@@ -87,7 +173,9 @@
                 </div>
                 <div class="col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
-                        <img class="card-img-top" src="https://doto.vtexassets.com/arquivos/ids/204985/pc-gamer-grizzly-24-kit-gamer-5600g-1tb-dotomexico-vista-frontal-2.jpg" alt="Project 2">
+                        <img class="card-img-top"
+                            src="https://doto.vtexassets.com/arquivos/ids/204985/pc-gamer-grizzly-24-kit-gamer-5600g-1tb-dotomexico-vista-frontal-2.jpg"
+                            alt="Project 2">
                         <div class="card-body">
                             <h4 class="card-title">Computadoras</h4>
                             <p class="card-text">Venta de computadoras</p>
@@ -96,7 +184,9 @@
                 </div>
                 <div class="col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
-                        <img class="card-img-top" src="https://cdn.euroinnova.edu.es/img/subidasEditor/funciones%20-%202021-04-28t123034-1619605935.080" alt="Project 3">
+                        <img class="card-img-top"
+                            src="https://cdn.euroinnova.edu.es/img/subidasEditor/funciones%20-%202021-04-28t123034-1619605935.080"
+                            alt="Project 3">
                         <div class="card-body">
                             <h4 class="card-title">Asesoria</h4>
                             <p class="card-text">Asesoria en proyectos tecnologicos.</p>
@@ -105,7 +195,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contact" class="py-5">
         <div class="container">
@@ -121,7 +211,8 @@
                             <input type="email" class="form-control" name="email" placeholder="Correo" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Mensaje" rows="4"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
                     </form>
@@ -131,7 +222,7 @@
     </section>
 
     <footer class="py-4 bg-dark text-white text-center">
-        <p>&copy; 2023 dvrsolutions. Derechos reservados</p>
+        <p>&copy; 2023 DvR Solutions. Derechos reservados</p>
     </footer>
 
     <!-- Include Bootstrap JS and Popper.js (required for Bootstrap dropdowns) -->
@@ -139,4 +230,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
